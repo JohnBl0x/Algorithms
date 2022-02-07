@@ -1,9 +1,12 @@
 
-function spinWords(string){
-    return string.split(" ").map(function (x){
-        return x.length >= 5 ? x = x.split("").reverse().join("") : x = x
+function spinWords() {
+    let x = document.getElementById("sentence").value
+    let y = document.getElementById("limit").value
+    document.getElementById("demo").innerHTML = 
+    x.split(" ").map(function (z){
+        return z = z.length >= y ? z = z.split("").reverse().join("") : z = z
     }).join(" ")
 }
 
-console.log(spinWords("This is abcde test"));
+
 
