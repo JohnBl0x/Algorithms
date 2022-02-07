@@ -16,3 +16,12 @@ function likes() {
     friends.length === 3 ? friends[0] + ", " + friends[1] + " and " + friends[2] + " like this" :
     friends[0] + ", " + friends[1] + " and " + (friends.length - 2) + " others like this"
 }
+
+function duplicateCount(){
+    let copy = document.getElementById("copy").value.toLowerCase().split("")
+    let duplicates = copy.filter((item,index)=>copy.indexOf(item)!==index)
+    document.getElementById("result2").innerHTML = [...new Set(duplicates)].length
+    // let arr = text.toLowerCase().split("")
+    // let duplicates = arr.filter((item,index)=>arr.indexOf(item)!==index)
+    // return [...new Set(duplicates)].length
+}

@@ -15,7 +15,8 @@ body {
 }
 
 #demo,
-#result {
+#result,
+#result2 {
   display: inline-block;
 }
 
@@ -29,4 +30,11 @@ body {
 .notice {
   font-size: small;
   font-style: italic;
+}
+
+.duplicates {
+  background-color: lightcyan;
+  width: 100%;
+  height: auto;
+  padding: 25px 50px;
 }
