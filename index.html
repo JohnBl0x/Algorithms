@@ -11,12 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Algorithms</h1>
+    <h1 class="mainTitle" >Algorithms</h1>
     <div class="reverse">
-        1) Write a sentence: <input type="text" id="sentence" value="Sentence"><br>
-        2) Set a limit: <input type="number" id="limit" value="1"><br>
+        <h2>Reverse Algorithm</h2>
+        <p class="notice">*Only words and spaces, no punctuation</p>
+        1) Write a sentence: <input type="text" id="sentence" placeholder="Write here..." size="50"><br>
+        2) Set a limit: <input type="number" id="limit" value="1" size="10"><br>
         3) <button onclick="spinWords()">Click the button</button><br>
         <b>Result: </b><p id="demo"></p>
+    </div>
+
+    <div class="likes">
+        <h2>Likes Algorithm</h2>
+        <p class="notice">*Only words and spaces, no punctuation</p>
+        1) Write some names: <input type="text" id="friends" placeholder="Write names here..." size="50"><br>
+        2) <button onclick="likes()">Click the button</button><br>
+        <b>Result: </b><p id="result"></p>
 
     </div>
 

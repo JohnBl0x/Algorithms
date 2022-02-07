@@ -2,13 +2,31 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.reverse {
-  background-color: lightblue;
-  width: 25%;
-  height: 600px;
-  padding: 10px;
+.mainTitle {
+  text-align: center;
 }
 
-#demo {
+.reverse {
+  background-color: lightblue;
+  width: 100%;
+  height: auto;
+  padding: 25px 50px;
   display: inline-block;
+}
+
+#demo,
+#result {
+  display: inline-block;
+}
+
+.likes {
+  background-color: lightcoral;
+  width: 100%;
+  height: auto;
+  padding: 25px 50px;
+}
+
+.notice {
+  font-size: small;
+  font-style: italic;
 }

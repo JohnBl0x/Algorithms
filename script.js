@@ -8,5 +8,11 @@ function spinWords() {
     }).join(" ")
 }
 
-
-
+function likes() {
+    let friends = document.getElementById("friends").value.split(" ")
+    document.getElementById("result").innerHTML = 
+    friends.length === 1 ? friends[0] + " likes this" :
+    friends.length === 2 ? friends[0] + " and " + friends[1] + " like this" :
+    friends.length === 3 ? friends[0] + ", " + friends[1] + " and " + friends[2] + " like this" :
+    friends[0] + ", " + friends[1] + " and " + (friends.length - 2) + " others like this"
+}
