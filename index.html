@@ -16,7 +16,7 @@
         <h2>Reverse Algorithm</h2>
         <p class="notice">*Only words and spaces, no punctuation</p>
         1) Write a sentence: <input type="text" id="sentence" placeholder="Write here..." size="50"><br>
-        2) Set a limit: <input type="number" id="limit" value="1" size="10"><br>
+        2) Set a word length: <input type="number" id="limit" value="1" size="10"><br>
         3) <button onclick="spinWords()">Click the button</button><br>
         <b>Result: </b><p id="demo"></p>
     </div>
@@ -35,6 +35,14 @@
         1) Write one word: <input type="text" id="copy" placeholder="Write a word here..." size="50"><br>
         2) <button onclick="duplicateCount()">Click the button</button><br>
         <b>Sets of duplicate letters: </b><p id="result2"></p>
+    </div>
+
+    <div class="phone">
+        <h2>Phone Number Algorithm</h2>
+        <p class="notice">*Phone number must have 10 digits and no spaces</p>
+        1) Write a phone number: <input type="text" id="phone" placeholder="Write a phone number here" size="50"><br>
+        <button onclick="createPhoneNumber()">Click the button</button><br>
+        <b>Formatted number: </b> <p id="result3"></p>
     </div>
 
     <script src="script.js"></script>

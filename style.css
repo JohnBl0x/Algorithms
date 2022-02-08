@@ -8,6 +8,12 @@ body {
 
 .reverse {
   background-color: lightblue;
+}
+
+.reverse,
+.likes,
+.duplicates,
+.phone {
   width: 100%;
   height: auto;
   padding: 25px 50px;
@@ -16,15 +22,13 @@ body {
 
 #demo,
 #result,
-#result2 {
+#result2,
+#result3 {
   display: inline-block;
 }
 
 .likes {
   background-color: lightcoral;
-  width: 100%;
-  height: auto;
-  padding: 25px 50px;
 }
 
 .notice {
@@ -34,7 +38,8 @@ body {
 
 .duplicates {
   background-color: lightcyan;
-  width: 100%;
-  height: auto;
-  padding: 25px 50px;
+}
+
+.phone {
+  background-color: lightgoldenrodyellow;
 }

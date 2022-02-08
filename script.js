@@ -21,7 +21,13 @@ function duplicateCount(){
     let copy = document.getElementById("copy").value.toLowerCase().split("")
     let duplicates = copy.filter((item,index)=>copy.indexOf(item)!==index)
     document.getElementById("result2").innerHTML = [...new Set(duplicates)].length
-    // let arr = text.toLowerCase().split("")
-    // let duplicates = arr.filter((item,index)=>arr.indexOf(item)!==index)
-    // return [...new Set(duplicates)].length
+}
+
+function createPhoneNumber(){
+    let phone = document.getElementById("phone").value.split("")
+    let format = "(xxx) xxx-xxxx"
+    for (let i in phone){
+        format = format.replace("x", phone[i])
+    }
+    document.getElementById("result3").innerHTML = format
 }
