@@ -13,7 +13,8 @@ body {
 .reverse,
 .likes,
 .duplicates,
-.phone {
+.phone,
+.alphabet {
   width: 100%;
   height: auto;
   padding: 25px 50px;
@@ -23,7 +24,8 @@ body {
 #demo,
 #result,
 #result2,
-#result3 {
+#result3,
+#result4 {
   display: inline-block;
 }
 
@@ -42,4 +44,8 @@ body {
 
 .phone {
   background-color: lightgoldenrodyellow;
+}
+
+.alphabet {
+  background-color: lightgray;
 }
