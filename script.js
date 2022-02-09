@@ -36,6 +36,17 @@ function alphabetPosition() {
     let alpha = document.getElementById("alphabet").value
     let alphabet = "abcdefghijklmnopqrstuvwxyz".split("")
     let final = alpha.toLowerCase().split(" ").join("").split("").map((x)=>x=alphabet.indexOf(x)+1)
-    // return final.filter(x=>x!==0).join(" ")
     document.getElementById("result4").innerHTML = final.filter(x=>x!==0).join(" ")
+}
+
+function toCamelCase(){
+    let camel = document.getElementById("camel").value
+    let arr = camel.includes("-") ? camel.split("-") : camel.split("_")
+    let final = arr.map(function (item, index){
+        if (index !== 0){
+            return item[0].toUpperCase() + item.slice(1)
+        }
+        return item
+    })
+    document.getElementById("result5").innerHTML = final.join("")
 }

@@ -14,7 +14,8 @@ body {
 .likes,
 .duplicates,
 .phone,
-.alphabet {
+.alphabet,
+.camel {
   width: 100%;
   height: auto;
   padding: 25px 50px;
@@ -25,7 +26,8 @@ body {
 #result,
 #result2,
 #result3,
-#result4 {
+#result4,
+#result5 {
   display: inline-block;
 }
 
@@ -48,4 +50,8 @@ body {
 
 .alphabet {
   background-color: lightgray;
+}
+
+.camel {
+  background-color: lightgreen;
 }
